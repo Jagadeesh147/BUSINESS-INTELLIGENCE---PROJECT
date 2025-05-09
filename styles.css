@@ -1,0 +1,256 @@
+/* styles.css (Enhanced Login Styling) */
+
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* --- New Styles Start Here --- */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background-image: url('login-background.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 90%;
+    max-width: 400px; /* Adjusted for a more focused form */
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    backdrop-filter: blur(10px); /* Apply blur to the background */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.login-icon {
+    /* Style for the icon above the title */
+    margin-bottom: 20px;
+    /* Add your icon styling here (e.g., background, border, etc.) */
+}
+
+.login-box h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    color: #fff;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.25); /* Lighter input background */
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.login-form input::placeholder {
+    color: #ddd; /* Placeholder text color */
+    opacity: 0.8;
+}
+
+.login-form button {
+    background-color: #4CAF50; /* A more prominent button color */
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+.login-form .remember-forgot {
+    /* Container for "Remember Me" and "Forgot Password" */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.login-form .remember-forgot label {
+    display: flex;
+    align-items: center;
+}
+
+.login-form .remember-forgot input[type="checkbox"] {
+    margin-right: 5px;
+    width: auto;
+}
+
+.login-form .remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.login-form .remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* --- End of New Styles --- */
+
+/* --- Removed or Modified --- */
+.background {
+    /* Removed gradient and animation for simplicity */
+    background: none;
+}
+
+.login-image {
+    display: none; /* Hide the image on the login page */
+}
+
+/* Unnecessary styles removed for brevity */
